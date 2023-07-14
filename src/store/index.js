@@ -1,11 +1,14 @@
 'use client';
-import { configureStore } from '@reduxjs/toolkit'
+import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit'
 import { todoReducer } from './todo'
+import { formReducer } from './form';
 
 const store = configureStore({
-  reducer: {
-    todo: todoReducer,
-  },
+    reducer: {
+        todo: todoReducer,
+        form: formReducer,
+    },
+    devTools:true,
 })
 
 export default store;
