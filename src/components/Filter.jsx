@@ -1,3 +1,4 @@
+'use client';
 import { FilterItem } from "./UI/FilterItem";
 
 export function Filter() {

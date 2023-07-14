@@ -1,3 +1,5 @@
+'use client';
+import { useSelector } from "react-redux";
 import { Checkbox } from "./UI/Checkbox";
 import { DeleteButton } from "./UI/deleteButton";
 

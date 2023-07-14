@@ -1,3 +1,4 @@
+'use client';
 export function  TaskCreator() {
     return (
         <div className="flex gap-3.5 w-full h-12">

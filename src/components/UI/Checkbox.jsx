@@ -13,7 +13,7 @@ export function Checkbox({
                 value="yes"
                 style={{opacity: "0"}}
             />
-            <label for={`taskCheckbox${id}`}></label>
+            <label htmlFor={`taskCheckbox${id}`}></label>
         </div>
     );   
 }
