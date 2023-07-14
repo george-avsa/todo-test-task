@@ -1,7 +1,7 @@
 'use client';
-const { createSlice } = require("@reduxjs/toolkit");
+const { createSlice, nanoid } = require("@reduxjs/toolkit");
 
-const initialState = [{id: 1, text: '123'}];
+const initialState = [{id: 1, text: 'Eating out', finished: true}];
 
 const todoSlice = createSlice({
     name: 'todo',
@@ -20,7 +20,7 @@ const todoSlice = createSlice({
             state = state.filter(todo => todo.id !== payload)
         },
         toggleTodo(state, {payload}) {
-            state = state.map(todo => {
+            return state.map(todo => {
                 if (todo.id === payload) {
                     return {
                         ...todo,
