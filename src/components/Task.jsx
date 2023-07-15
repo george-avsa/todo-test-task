@@ -7,9 +7,9 @@ export function Task({
     todo
 }) {
     return (
-        <div className="flex relative items-center w-full h-12 bg-white px-4 justify-between gap-4 shadow-shadow rounded overflow-hidden">
+        <div className="flex relative items-center w-full h-12 bg-white dark:bg-[#252945] dark:shadow-none px-4 justify-between gap-4 shadow-shadow rounded overflow-hidden">
             <Checkbox id={todo.id} finished={todo.finished}></Checkbox>
-            <p className="text-black grow truncate pr-8">{todo.text}</p>
+            <p className="text-black dark:text-white grow truncate pr-8">{todo.text}</p>
             <DeleteButton id={todo.id}></DeleteButton>
         </div>
     );
